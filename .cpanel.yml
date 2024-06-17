@@ -1,7 +1,7 @@
 Deployment:
   Tasks:
-  - export DEPLOYPATH=/home/bargbylj/public_html/working  # Deploy to /working directory
-  - export REPOPATH=/home/bargbylj/repositories/website  # Replace with your repo name
+  - export DEPLOYPATH=/home/bargbylj/public_html/working/  # Deploy to /working directory
+  - export REPOPATH=/home/bargbylj/repositories/website/  # Replace with your repo name
   - /bin/rm -Rf ${DEPLOYPATH}_old  # Remove old files (optional)
   - /bin/cp -R ${REPOPATH}/* ${DEPLOYPATH}  # Copy all files from repo to deploy path
   - /bin/chmod 755 ${DEPLOYPATH}  # Set permissions on the deploy directory
