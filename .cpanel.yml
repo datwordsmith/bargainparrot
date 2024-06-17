@@ -1,0 +1,9 @@
+Deployment:
+  Tasks:
+  - export DEPLOYPATH=/home/bargbylj/public_html  # Replace with your cPanel username
+  - export REPOPATH=/home/bargbylj/working  # Replace with your paths
+  - /bin/rm -Rf ${DEPLOYPATH}_old  # Remove old files (optional)
+  - /bin/cp -R ${REPOPATH}/* ${DEPLOYPATH}  # Copy all files from repo to deploy path
+  - /bin/chmod 755 ${DEPLOYPATH}  # Set permissions on the deploy directory
+  - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \;  # Set permissions on directories
+  - /bin/find ${DEPLOYPATH} -type f -exec /bin/chmod 644 '{}' \;.  # Set permissions on files
