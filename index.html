@@ -87,19 +87,18 @@
 
 <!--HERO-->
 <div class="container-fluid px-4 py-5 bg-white" id="hero">
-  <div class="container pt-5">
+  <div class="container pt-5 py-4">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-12 col-sm-10 col-lg-6">
         <img src="assets/img/squawk.png" class="d-block mx-lg-auto img-fluid" alt="Squawker" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h2 class="fw-bold lh-1 mb-3">Uncover Local Deals with a Squawk</h2>
+        <h2 class="fw-bold lh-1 mb-3">Discover Deals Near You</h2>
         <p class="lead">
           Discover the joy of savings with BargainParrot, your digital companion in the quest for the best local deals.
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-main btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-accent btn-lg px-4">Default</button>
+          <button type="button" class="btn btn-main btn-lg px-4 me-md-2"><i class="bi bi-cart3"></i> Start Shopping</button>
         </div>
       </div>
     </div>
@@ -108,30 +107,76 @@
 <!--END HERO-->
 
 <main>
-  <!--FEATURES-->  
-  <section class="container d-flex flex-column align-items-center py-5" id="features">
-    <h2 class="fw-bold lh-1 mb-5">Features</h2>
-    <div class="row">
+<!--HOW IT WORKS-->
+<section class="container mb-3">
+  <div class="text-center">
+    <h2 class="fw-bold mb-4">How It Works</h2>
+    <p class="text-muted mb-5">Follow these simple steps to start saving with BargainParrot</p>
+  </div>  
+  <div class="row">
+    <div class="col-md-3 mb-4">
+      <div class="how-it-works-step step-odd">
+        <img src="assets/img/sign_up.svg" alt="Sign Up">
+        <h3>Sign Up or Log In</h3>
+        <p>Create an account or log in to access local deals.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="how-it-works-step step-even">
+        <img src="assets/img/find_deals.png" alt="Browse Deals">
+        <h3>Browse Deals</h3>
+        <p>Explore personalized deals and discounts from nearby merchants.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="how-it-works-step step-odd">
+        <img src="assets/img/buy_online.svg" alt="Save or Purchase">
+        <h3>Save or Purchase</h3>
+        <p>Save deals for later or make a purchase directly through the app.</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="how-it-works-step step-even">
+        <img src="assets/img/shopping_bags.svg" alt="Redeem & Enjoy">
+        <h3>Redeem & Enjoy</h3>
+        <p>Redeem your deals at local businesses and enjoy the savings.</p>
+      </div>
+    </div>
+  
+  </div>
+</section>
+<!--END HOW IT WORKS-->
+
+  <!--SHOPPER FEATURES-->  
+  <section class="d-flex flex-column align-items-center py-5" id="shopper-features">
+    <!--<h2 class="fw-bold lh-1 mb-5">Features</h2>-->
+    <div class="col-md-8 text-center mx-auto my-4">
+      <h3 class="fw-bold">Why you need BargainParrot</h3>
+      <p class="text-muted">Unlock new opportunities, attract more customers and boost your sales by showcasing your best deals on our platform.</p>
+    </div>
+    <div class="row container">
       <!--LEFT-->
       <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start text-center text-md-start gap-2 mb-5 mb-md-0 shopper">
-        <div class="my-auto">
+        <div class="">
+         <img src="assets/img/shopper.png" class="mb-2" height="150" alt="Squawker" loading="lazy">
           <h3 class="fw-bold">Shop More, Save More</h3>
           <p class="text-muted">
-              Paragraph of text beneath the heading to explain the heading. We'll add another sentence and probably keep going until we run out of words.
+              Discover unbeatable local deals and discounts tailored to your preferences.
           </p>
           <div class="d-flex justify-content-center justify-content-md-start w-100">
             <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-cart3"></i> Start Shopping</a>
           </div>
         </div> 
-      </div>
-    
-    
+      </div>    
 
       <!--RIGHT-->
       <div class="col-md-8">
 
         <div class="row">
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-2">
             <div class="feature-card p-4">
               <p class="mt-2"><i class="fa-regular fa-bell fa-2xl text-main"></i></p>
               <h4 class="fw-semibold py-1 mb-0">Real-Time Deal Alerts</h4>
@@ -139,7 +184,7 @@
             </div>
           </div>
       
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-2">
             <div class="feature-card p-4">
               <p class="mt-2"><i class="fa-regular fa-star fa-2xl text-main"></i></p>
               <h4 class="fw-semibold py-1 mb-0">Personalized Deals</h4>
@@ -147,15 +192,15 @@
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-2">
             <div class="feature-card p-4">
               <p class="mt-2"><i class="fa-solid fa-shield-halved fa-2xl text-main"></i></p>
               <h4 class="fw-semibold py-1 mb-0">Secure Payments</h4>
-              <p class="text-muted">Pay securely through Google Pay, Apple Pay, and other methods</p>
+              <p class="text-muted">Pay securely through Google Pay, Apple Pay and other methods</p>
             </div>
           </div>
           
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-2">
             <div class="feature-card p-4">
               <p class="mt-2"><i class="fa-regular fa-thumbs-up fa-2xl text-main"></i></p>
               <h4 class="fw-semibold py-1 mb-0">User Reviews and Ratings</h4>
@@ -168,58 +213,90 @@
       </div>
     </div>
   </section>
-  
+  <!--END SHOPPER FEATURES-->
 
+  <!--VENDOR FEATURES-->
+  <section class="container-fluid d-flex flex-column align-items-center py-3" id="vendor-features">
+      <div class="row container mt-5">
+        <div class="col-md-8 text-center mx-auto mb-5">
+            <h3 class="fw-bold">Empower Your Business with BargainParrot</h3>
+            <p class="text-muted">Unlock new opportunities, attract more customers and boost your sales by showcasing your best deals on our platform.</p>
+        </div>
+        <div class="col-md-6 my-auto order-1 order-md-0">
+          <div class="row">
+            <div class="col-md-12 d-flex align-items-start feature-card mb-3 pt-4 pb-2">
+              <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div>
+                <h4 class="fw-semibold py-1 mb-0">Business Profile Management</h4>
+                <p class="text-muted">Create and manage your business profile to attract more customers.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-12 d-flex align-items-start feature-card mb-3 pt-4 pb-2">
+              <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <i class="fa-solid fa-list-ul"></i>
+              </div>
+              <div>
+                <h4 class="fw-semibold py-1 mb-0">List and Manage Deals</h4>
+                <p class="text-muted">Easily create, edit and manage your deals</p>
+              </div>
+            </div>
+
+            <div class="col-md-12 d-flex align-items-start feature-card mb-3 pt-4 pb-2">
+              <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div>
+                <h4 class="fw-semibold py-1 mb-0">Performamce Analytics</h4>
+                <p class="text-muted">Gain insights into deal performance and customer behaviour.</p>
+              </div>
+            </div>
+                      
+          </div>
+        </div>
+
+        <div class="col-md-6 order-0 order-md-1">
+          <img src="assets/img/vendor.png" class="mb-2 img-fluid" alt="Vendor" loading="lazy">
+        </div>
+      </div>
+  </section>  
+  <!--END VENDOR FEATURES-->
+
+  <!--CTA-->
+  <section id="cta" class="py-5 bg-dark text-white-50">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Be the First to Know!</h2>
+      <p class="text-muted mb-4 text-white-50">Sign up now and be the first to discover the best local deals and discounts.</p>
+
+
+        <div class="col-md-6 mx-auto">
+          <form class="">
+            <div class="d-flex gap-2 align-items-center mx-auto">
+              <div class="col-md-8 flex-grow-1">
+                <label for="subscriber" class="form-label visually-hidden">Email address</label>
+                <input type="email" class="form-control form-control-lg" id="subscriber" placeholder="Enter your email" required>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-main btn-lg">Notify Me</button>
+              </div>
+            </div>            
+          </form>  
+        </div>
+
+
+      <small class="text-muted d-block mt-3">We respect your privacy. Your email will only be used to notify you about the launch.</small>
+    </div>
+  </section>
+  <!--END CTA-->
+  
 
 </main>
 
 <div class="container-fluid bg-dark">
   <div class="container">
-    <footer class="pt-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-5 offset-md-1 mb-3 text-white-50">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
+    <footer class="">
       <div class="d-flex flex-column flex-sm-row justify-content-between py-3 border-top">
         <p class="text-white-50">&copy; 2024 BargainParrot Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
