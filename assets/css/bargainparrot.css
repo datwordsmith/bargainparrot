@@ -143,12 +143,75 @@ body {
     color: #FFC55A !important;
 }
 
+/* How it works*/
+.how-it-works-step {
+
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+  }
+
+  .step-even {
+    background-color: #ffc55a;
+  }
+
+  .step-odd {
+    background-color: #FFF0D3;
+  }
+
+  .how-it-works-step img {
+    max-height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .how-it-works-step h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+
+
+
 /* Features */
-.feature-card:hover {
+#shopper-features {
+    background: url('../img/shopper_bkg.png') no-repeat center center;
+}
+
+#shopper-features .feature-card:hover {
     border-radius: 10px 10px 10px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#vendor-features {
+
+}
+
+#vendor-features .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+    background-color: #FFF0D3;
+}
+
+#cta {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+  } 
+  
+  #cta p {
+    font-size: 1.25rem;
+  }
+  
+
+  
+  #cta small {
+    font-size: 0.875rem;
+  }
+  
 
 footer .nav-link {
     color: #FFC55A;
