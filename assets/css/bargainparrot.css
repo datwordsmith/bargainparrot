@@ -186,10 +186,6 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#vendor-features {
-
-}
-
 #vendor-features .icon-square {
     width: 3rem;
     height: 3rem;
@@ -212,6 +208,28 @@ body {
     font-size: 0.875rem;
   }
   
+
+/* FAQ Section */
+#faq .accordion-button {
+    background-color: #FFC55A;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-item {
+    border: none;
+}
+
+#faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+
+  
+
 
 footer .nav-link {
     color: #FFC55A;
