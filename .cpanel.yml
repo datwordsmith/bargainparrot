@@ -1,6 +1,6 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bargbylj/public_html/working
+    - export DEPLOYPATH=/home/bargbylj/public_html/preprod
     - export REPOPATH=/home/bargbylj/repositories/website
     - /bin/rm -Rf ${DEPLOYPATH}_old
     - /bin/cp -R ${REPOPATH}/* ${DEPLOYPATH}
