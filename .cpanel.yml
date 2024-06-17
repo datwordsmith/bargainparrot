@@ -1,9 +1,9 @@
-Deployment:
-  Tasks:
-  - export DEPLOYPATH=/home/bargbylj/public_html/working
-  - export REPOPATH=/home/bargbylj/repositories/website
-  - /bin/rm -Rf ${DEPLOYPATH}_old  
-  - /bin/cp -R ${REPOPATH}/* ${DEPLOYPATH} 
-  - /bin/chmod 755 ${DEPLOYPATH} 
-  - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \; 
-  - /bin/find ${DEPLOYPATH} -type f -exec /bin/chmod 644 '{}' \;. 
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bargbylj/public_html/working
+    - export REPOPATH=/home/bargbylj/repositories/website
+    - /bin/rm -Rf ${DEPLOYPATH}_old
+    - /bin/cp -R ${REPOPATH}/* ${DEPLOYPATH}
+    - /bin/chmod 755 ${DEPLOYPATH}
+    - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \;
+    - /bin/find ${DEPLOYPATH} -type f -exec /bin/chmod 644 '{}' \;
