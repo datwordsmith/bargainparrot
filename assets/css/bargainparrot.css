@@ -25,7 +25,7 @@ body {
 #navbarNav .nav-item a {
     background-color: #FC4100;
     border-radius: 10px 10px 10px 0;
-    color: black;
+    color: white;
 }
 
 #navbarNav .nav-item a:hover {
@@ -70,8 +70,7 @@ body {
 }
 
 .closebtn {
-    position: absolute;
-    
+    position: absolute;    
     top: 20px;
     right: 20px;
     font-size: 2em;
@@ -79,12 +78,46 @@ body {
 }
 
 
-#hero {
+#home {
     margin-top: 0;
     padding-top: 4.5rem; /* Equal to the height of the navbar */
-    background: url('../img/hero.svg') no-repeat center center;
+    background: url('../img/curved_lines.svg') no-repeat center center;
     background-size: cover;
 }
+
+.black-friday {
+    font-size: 1.5em; 
+    background-color: #FC4100;
+    color: white;
+}
+
+.rotating-text-container {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+  .rotating-text {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    height: 4rem; /* Adjust as needed */
+    line-height: 4rem; /* Adjust as needed */
+  }
+  .rotating-text span {
+    display: block;
+    animation: rotate 16s linear infinite;
+  }
+  @keyframes rotate {
+    0%, 10% { transform: translateY(0); }
+    12.5%, 22.5% { transform: translateY(-100%); }
+    25%, 35% { transform: translateY(-200%); }
+    37.5%, 47.5% { transform: translateY(-300%); }
+    50%, 60% { transform: translateY(-400%); }
+    62.5%, 72.5% { transform: translateY(-500%); }
+    75%, 85% { transform: translateY(-600%); }
+    87.5%, 97.5% { transform: translateY(-700%); }
+    100% { transform: translateY(0); }
+  }
 
 .btn {
     border-radius: 10px 10px 10px 0;
@@ -105,7 +138,7 @@ body {
 .btn-main {
     background-color: #FC4100;
     border: 1px solid #FC4100;
-    color: black;
+    color: white;
 }
 
 .btn-main:hover {
@@ -130,6 +163,7 @@ body {
     background-color: #00215E;
     color: white;
 }
+
 
 .text-accent {
     color: #00215E
@@ -177,16 +211,20 @@ body {
 
 
 /* Features */
-#shopper-features {
+#shoppers {
     background: url('../img/shopper_bkg.png') no-repeat center center;
 }
 
-#shopper-features .feature-card:hover {
+#shoppers .feature-card:hover {
     border-radius: 10px 10px 10px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#vendor-features .icon-square {
+#vendors {
+    background-color: #FFF0D350;
+}
+
+#vendors .icon-square {
     width: 3rem;
     height: 3rem;
     border-radius: .75rem;
