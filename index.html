@@ -55,13 +55,13 @@
         <div class="collapse navbar-collapse order-2 order-md-1" id="navbarNav">
             <ul class="navbar-nav mx-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">FAQs</a>
+                    <a class="nav-link px-3" href="#faq">FAQs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-3" href="#">Blog</a>
+                  <a class="nav-link px-3" href="#home">Blog</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">About</a>
+                    <a class="nav-link px-3" href="#vendors">Vendors</a>
                 </li>
             </ul>
         </div>
@@ -71,26 +71,28 @@
 
 <!--SIDE NAV-->
 <div class="offcanvas-nav" id="sideNav">
-  <a href="#" class="closebtn" onclick="closeNav()"><i class="fas fa-times-circle fa-lg"></i> <span class="visually-hidden">Close</span></a>
+  <a href="#" class="closebtn" onclick="closeNav(event)"><i class="fas fa-times-circle fa-lg"></i> <span class="visually-hidden">Close</span></a>
   <ul class="nav flex-column mb-auto text-center mt-5">
+    <!--
     <li class="nav-item">
       <a href="#" class="nav-link active" aria-current="page">
         Home
       </a>
     </li>
+    -->
     <li class="nav-item">
-      <a href="#" class="nav-link text-white">
+      <a href="#faq" class="nav-link text-white" onclick="closeNav(event, 'faq')">
         FAQs
       </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-white">
+      <a href="#home" class="nav-link text-white" onclick="closeNav(event, 'home')">
         Blog
       </a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link text-white">
-        About
+      <a href="#vendors" class="nav-link text-white"onclick=" closeNav(event, 'vendors')">
+        Vendors
       </a>
     </li>
   </ul>
@@ -101,20 +103,35 @@
 <!--END SIDE NAV-->
 
 <!--HERO-->
-<div class="container-fluid px-4 py-5 bg-white" id="hero">
+<div class="container-fluid px-4 py-5 bg-white" id="home">
   <div class="container pt-5 py-4">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-12 col-sm-10 col-lg-6">
         <img src="assets/img/squawk.png" class="d-block mx-lg-auto img-fluid" alt="Squawker" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h2 class="fw-bold lh-1 mb-3">Discover Deals Near You</h2>
-        <p class="lead">
-          Discover the joy of savings with BargainParrot, your digital companion in the quest for the best local deals.
+        <div class="rotating-text-container mb-3">
+          <div class="rotating-text">
+            <span>Everyday</span>
+            <span>Monday</span>
+            <span>Tuesday</span>
+            <span>Wednesday</span>
+            <span>Thursday</span>
+            <span>Friday</span>
+            <span>Saturday</span>
+            <span>Sunday</span>
+          </div>
+        </div>  
+        <h2 class="fw-bold lh-1 mt-3"> is a <span class="black-friday p-2">Black Friday</span></h2>     
+        <!-- <h2 class="fw-bold lh-1 mb-3">Discover Deals Near You</h2> -->
+        <p class="lead mt-4">
+          Discover the joy of savings with BargainParrot, your one-stop shop for the best local deals.
         </p>
+        <!--
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-main btn-lg px-4 me-md-2"><i class="bi bi-cart3"></i> Start Shopping</button>
         </div>
+        -->
       </div>
     </div>
   </div>
@@ -141,7 +158,7 @@
       <div class="how-it-works-step step-even">
         <img src="assets/img/find_deals.png" alt="Browse Deals">
         <h3>Browse Deals</h3>
-        <p>Explore personalized deals and discounts from nearby merchants.</p>
+        <p>Explore personalised deals and discounts from nearby merchants.</p>
       </div>
     </div>
 
@@ -166,24 +183,17 @@
 <!--END HOW IT WORKS-->
 
   <!--SHOPPER FEATURES-->  
-  <section class="d-flex flex-column align-items-center py-5" id="shopper-features">
+  <section class="d-flex flex-column align-items-center py-5" id="shoppers">
     <!--<h2 class="fw-bold lh-1 mb-5">Features</h2>-->
     <div class="col-md-8 text-center mx-auto my-4">
       <h3 class="fw-bold">Why you need BargainParrot</h3>
-      <p class="text-muted">Unlock new opportunities, attract more customers and boost your sales by showcasing your best deals on our platform.</p>
+      <p class="text-muted">Discover unbeatable local deals and discounts tailored to your preferences.</p>
     </div>
     <div class="row container">
       <!--LEFT-->
       <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start text-center text-md-start gap-2 mb-5 mb-md-0 shopper">
         <div class="">
-         <img src="assets/img/shopper.png" class="mb-2" height="150" alt="Squawker" loading="lazy">
-          <h3 class="fw-bold">Shop More, Save More</h3>
-          <p class="text-muted">
-              Discover unbeatable local deals and discounts tailored to your preferences.
-          </p>
-          <div class="d-flex justify-content-center justify-content-md-start w-100">
-            <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-cart3"></i> Start Shopping</a>
-          </div>
+         <img src="assets/img/shopper.png" class="mb-2 img-fluid" alt="Shopper" loading="lazy">
         </div> 
       </div>    
 
@@ -202,7 +212,7 @@
           <div class="col-md-6 mb-2">
             <div class="feature-card p-4">
               <p class="mt-2"><i class="fa-regular fa-star fa-2xl text-main"></i></p>
-              <h4 class="fw-semibold py-1 mb-0">Personalized Deals</h4>
+              <h4 class="fw-semibold py-1 mb-0">Personalised Deals</h4>
               <p class="text-muted">Get deals tailored to your preferences and past interactions.</p>
             </div>
           </div>
@@ -226,14 +236,20 @@
               
         
       </div>
+
+      <div class="col-md-12">
+        <div class="d-flex justify-content-center w-100">
+          <a href="#" class="btn btn-main btn-lg"><i class="bi bi-cart3"></i> Start Shopping</a>
+        </div>
+      </div>
     </div>
   </section>
   <!--END SHOPPER FEATURES-->
 
   <!--VENDOR FEATURES-->
-  <section class="container-fluid d-flex flex-column align-items-center py-3" id="vendor-features">
-      <div class="row container mt-5">
-        <div class="col-md-8 text-center mx-auto mb-5">
+  <section class="container-fluid d-flex flex-column align-items-center py-5" id="vendors">
+      <div class="row container pt-5">
+        <div class="col-md-8 text-center mx-auto mb-3">
             <h3 class="fw-bold">Empower Your Business with BargainParrot</h3>
             <p class="text-muted">Unlock new opportunities, attract more customers and boost your sales by showcasing your best deals on our platform.</p>
         </div>
@@ -268,20 +284,24 @@
                 <p class="text-muted">Gain insights into deal performance and customer behaviour.</p>
               </div>
             </div>
-                      
+            
+            <div class="col-md-12">
+              <button type="button" class="btn btn-main btn-lg"><i class="fa-solid fa-store me-1"></i> Start Selling</button>
+            </div>
           </div>
         </div>
 
         <div class="col-md-6 order-0 order-md-1">
           <img src="assets/img/vendor.png" class="mb-2 img-fluid" alt="Vendor" loading="lazy">
         </div>
+
       </div>
   </section>  
   <!--END VENDOR FEATURES-->
 
 <!-- FAQ SECTION -->
 <section id="faq" class="py-5">
-  <div class="container">
+  <div class="container pt-5">
     <div class="text-center mb-5">
       <h2 class="fw-bold">Frequently Asked Questions</h2>
       <p class="text-muted">Got questions? We've got answers!</p>
@@ -411,10 +431,22 @@
   // Event listener for navbar toggler button
 document.querySelector(".navbar-toggler").addEventListener("click", toggleSideNav);
 
-// Function to close the side navigation
-function closeNav() {
-    var sideNav = document.getElementById("sideNav");
-    sideNav.classList.remove("show");
+
+function openNav() {
+  var sideNav = document.getElementById("sideNav");
+  sideNav.classList.add("show");
+}
+
+function closeNav(event, sectionId) {
+  event.preventDefault(); // Prevent the default anchor behavior
+  var sideNav = document.getElementById("sideNav");
+  sideNav.classList.remove("show");
+
+  // Scroll to #faq
+  var pageSection = document.getElementById(sectionId);
+  if (pageSection) {
+    pageSection.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 // Get the navbar element
@@ -431,6 +463,21 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
+setInterval(function () {
+  const show = document.querySelector('span[data-show]')
+  const next = show.nextElementSibling || document.querySelector('span:first-child')
+  const up = document.querySelector('span[data-up]')
+  
+  if (up) {
+    up.removeAttribute('data-up')
+  }
+  
+  show.removeAttribute('data-show')
+  show.setAttribute('data-up', '')
+  
+  next.setAttribute('data-show', '')
+}, 2000)
 
 </script>
 
