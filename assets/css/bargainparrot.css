@@ -95,28 +95,21 @@ body {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
-  }
-  .rotating-text {
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: top;
     height: 4rem; /* Adjust as needed */
-    line-height: 4rem; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
   }
+  
+  .rotating-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  
   .rotating-text span {
     display: block;
-    animation: rotate 16s linear infinite;
-  }
-  @keyframes rotate {
-    0%, 10% { transform: translateY(0); }
-    12.5%, 22.5% { transform: translateY(-100%); }
-    25%, 35% { transform: translateY(-200%); }
-    37.5%, 47.5% { transform: translateY(-300%); }
-    50%, 60% { transform: translateY(-400%); }
-    62.5%, 72.5% { transform: translateY(-500%); }
-    75%, 85% { transform: translateY(-600%); }
-    87.5%, 97.5% { transform: translateY(-700%); }
-    100% { transform: translateY(0); }
+    height: 4rem; /* Adjust as needed */
+    line-height: 4rem; /* Adjust as needed */
   }
 
 .btn {

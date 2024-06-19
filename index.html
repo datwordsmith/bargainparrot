@@ -111,7 +111,7 @@
       </div>
       <div class="col-lg-6">
         <div class="rotating-text-container mb-3">
-          <div class="rotating-text">
+          <div class="rotating-text fw-bold">
             <span>Everyday</span>
             <span>Monday</span>
             <span>Tuesday</span>
@@ -419,6 +419,7 @@
 </div>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
 
 <script>
 
@@ -464,20 +465,22 @@ window.addEventListener('scroll', function() {
     }
 });
 
-setInterval(function () {
-  const show = document.querySelector('span[data-show]')
-  const next = show.nextElementSibling || document.querySelector('span:first-child')
-  const up = document.querySelector('span[data-up]')
-  
-  if (up) {
-    up.removeAttribute('data-up')
+$(document).ready(function() {
+  var $rotatingText = $('.rotating-text');
+  var $spans = $rotatingText.find('span');
+  var index = 0;
+  var total = $spans.length;
+
+  function rotateText() {
+    index = (index + 1) % total;
+    var offset = -index * 4; // 4rem is the height of each span
+    $rotatingText.css('transform', 'translateY(' + offset + 'rem)');
   }
-  
-  show.removeAttribute('data-show')
-  show.setAttribute('data-up', '')
-  
-  next.setAttribute('data-show', '')
-}, 2000)
+
+  // Rotate text every 2 seconds
+  setInterval(rotateText, 2000); // Adjust the interval as needed
+});
+
 
 </script>
 
