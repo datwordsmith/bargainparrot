@@ -43,9 +43,15 @@
 <!--TOP NAV-->
 <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="/">
-            <img src="assets/img/bargain_parrot_logo.png" height="70" alt="Bargain Parrot">
+        <!-- Default logo for desktop view -->
+        <a class="navbar-brand d-none d-md-block" href="/">
+          <img src="assets/img/bargain_parrot_logo.png" height="70" alt="Bargain Parrot">
         </a>
+        <!-- Mobile logo for mobile view -->
+        <a class="navbar-brand d-md-none" href="/">
+            <img src="assets/img/bargain_parrot_favicon.png" height="70" alt="Bargain Parrot">
+        </a>
+
         <div class="d-flex order-1 order-md-2 ms-auto">
             <button class="btn btn-main me-2" type="button"><i class="bi bi-cart3"></i> Find Deals</button>
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sideNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,28 +116,23 @@
         <img src="assets/img/squawk.png" class="d-block mx-lg-auto img-fluid" alt="Squawker" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <div class="rotating-text-container mb-3">
-          <div class="rotating-text fw-bold">
-            <span>Everyday</span>
-            <span>Monday</span>
-            <span>Tuesday</span>
-            <span>Wednesday</span>
-            <span>Thursday</span>
-            <span>Friday</span>
-            <span>Saturday</span>
-            <span>Sunday</span>
-          </div>
-        </div>  
-        <h2 class="fw-bold lh-1 mt-3"> is a <span class="black-friday p-2">Black Friday</span></h2>     
-        <!-- <h2 class="fw-bold lh-1 mb-3">Discover Deals Near You</h2> -->
-        <p class="lead mt-4">
-          Discover the joy of savings with BargainParrot, your one-stop shop for the best local deals.
-        </p>
+        <h2 class="fw-bold lh-1 my-3">Everyday is a</h2>
+        <h2><span class="black-friday p-2 mt-2">Black Friday</span></h2>         
+
+        <p id="description" class="lead mt-4 description"></p>
+
         <!--
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-main btn-lg px-4 me-md-2"><i class="bi bi-cart3"></i> Start Shopping</button>
+        <div class="d-flex gap-2 justify-content-start">
+          <button type="button" class="btn btn-main btn-lg px-4 me-2">
+            <i class="bi bi-cart3"></i> Find Deals
+          </button>
+          <button type="button" class="btn btn-outline-accent btn-lg px-4">
+            <i class="fa-solid fa-store me-1"></i> Sell
+          </button>
         </div>
         -->
+        
+
       </div>
     </div>
   </div>
@@ -139,56 +140,55 @@
 <!--END HERO-->
 
 <main>
-<!--HOW IT WORKS-->
-<section class="container mb-3">
-  <div class="text-center">
-    <h2 class="fw-bold mb-4">How It Works</h2>
-    <p class="text-muted mb-5">Follow these simple steps to start saving with BargainParrot</p>
-  </div>  
-  <div class="row">
-    <div class="col-md-3 mb-4">
-      <div class="how-it-works-step step-odd">
-        <img src="assets/img/sign_up.svg" alt="Sign Up">
-        <h3>Sign Up or Log In</h3>
-        <p>Create an account or log in to access local deals.</p>
+  <!--HOW IT WORKS-->
+  <section class="container mb-3">
+    <div class="text-center">
+      <h2 class="fw-bold mb-4">How It Works</h2>
+      <p class="text-muted mb-5">Follow these simple steps to start saving with BargainParrot</p>
+    </div>  
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="how-it-works-step step-odd">
+          <img src="assets/img/sign_up.svg" alt="Sign Up">
+          <h3>Sign Up or Log In</h3>
+          <p>Create an account or log in to access local deals.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-md-3 mb-4">
-      <div class="how-it-works-step step-even">
-        <img src="assets/img/find_deals.png" alt="Browse Deals">
-        <h3>Browse Deals</h3>
-        <p>Explore personalised deals and discounts from nearby merchants.</p>
+      <div class="col-md-3 mb-4">
+        <div class="how-it-works-step step-even">
+          <img src="assets/img/find_deals.png" alt="Browse Deals">
+          <h3>Browse Deals</h3>
+          <p>Explore personalised deals and discounts from nearby merchants.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-md-3 mb-4">
-      <div class="how-it-works-step step-odd">
-        <img src="assets/img/buy_online.svg" alt="Save or Purchase">
-        <h3>Save or Purchase</h3>
-        <p>Save deals for later or make a purchase directly through the app.</p>
+      <div class="col-md-3 mb-4">
+        <div class="how-it-works-step step-odd">
+          <img src="assets/img/buy_online.svg" alt="Save or Purchase">
+          <h3>Save or Purchase</h3>
+          <p>Save deals for later or make a purchase directly through the app.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-md-3 mb-4">
-      <div class="how-it-works-step step-even">
-        <img src="assets/img/shopping_bags.svg" alt="Redeem & Enjoy">
-        <h3>Redeem & Enjoy</h3>
-        <p>Redeem your deals at local businesses and enjoy the savings.</p>
+      <div class="col-md-3 mb-4">
+        <div class="how-it-works-step step-even">
+          <img src="assets/img/shopping_bags.svg" alt="Redeem & Enjoy">
+          <h3>Redeem & Enjoy</h3>
+          <p>Redeem your deals at local businesses and enjoy the savings.</p>
+        </div>
       </div>
+    
     </div>
-  
-  </div>
-</section>
-<!--END HOW IT WORKS-->
+  </section>
+  <!--END HOW IT WORKS-->
 
   <!--SHOPPER FEATURES-->  
   <section class="d-flex flex-column align-items-center py-5" id="shoppers">
-    <!--<h2 class="fw-bold lh-1 mb-5">Features</h2>-->
-    <div class="col-md-8 text-center mx-auto my-4">
+    <div class="row container text-center">
       <h3 class="fw-bold">Why you need BargainParrot</h3>
       <p class="text-muted">Discover unbeatable local deals and discounts tailored to your preferences.</p>
-    </div>
+    </div>    
     <div class="row container">
       <!--LEFT-->
       <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start text-center text-md-start gap-2 mb-5 mb-md-0 shopper">
@@ -299,78 +299,103 @@
   </section>  
   <!--END VENDOR FEATURES-->
 
-<!-- FAQ SECTION -->
-<section id="faq" class="py-5">
-  <div class="container pt-5">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Frequently Asked Questions</h2>
-      <p class="text-muted">Got questions? We've got answers!</p>
-    </div>
-    <div class="accordion col-md-8 mx-auto" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            What is BargainParrot?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            BargainParrot is a digital platform that helps you discover the best local deals and discounts from nearby merchants.
-          </div>
+  <!--ABOUT US-->  
+  <section class="d-flex flex-column align-items-center py-5 bg-white" id="about-us">  
+    <div class="row align-items-center container">
+      <!--LEFT-->
+      <div class="col-md-6 d-flex justify-content-center">
+          <img src="assets/img/about_us.png" class="mb-2 img-fluid about-us-image" alt="About Us" loading="lazy">
+      </div>    
+
+      <!--RIGHT-->
+      <div class="col-md-6">
+        <div class="row mb-3">
+          <h3 class="fw-bold">About Bargain Parrot</h3>
+          <p class="text-muted">Discover unbeatable local deals and discounts tailored to your preferences.</p>          
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            How do I sign up?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Signing up is easy! Just click the 'Sign Up' button on the homepage, fill in your details, and you’re all set to start finding great deals.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Is BargainParrot free to use?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Yes, BargainParrot is completely free for users to find and redeem deals.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            How do I redeem a deal?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            To redeem a deal, simply save the deal to your account and present it to the merchant when you make a purchase.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            How can businesses join BargainParrot?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Local businesses can join BargainParrot by signing up on our website and creating a business profile. Once approved, they can start posting deals immediately.
-          </div>
-        </div>
+
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nibh neque. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nibh neque. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+        
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nibh neque. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
       </div>
     </div>
-  </div>
-</section>
-<!-- END FAQ SECTION -->
+  </section>
+  <!--END ABOUT US-->
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-5">
+    <div class="container pt-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Frequently Asked Questions</h2>
+        <p class="text-muted">Got questions? We've got answers!</p>
+      </div>
+      <div class="accordion col-md-8 mx-auto" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is BargainParrot?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              BargainParrot is a digital platform that helps you discover the best local deals and discounts from nearby merchants.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How do I sign up?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Signing up is easy! Just click the 'Sign Up' button on the homepage, fill in your details, and you’re all set to start finding great deals.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Is BargainParrot free to use?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, BargainParrot is completely free for users to find and redeem deals.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How do I redeem a deal?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              To redeem a deal, simply save the deal to your account and present it to the merchant when you make a purchase.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              How can businesses join BargainParrot?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Local businesses can join BargainParrot by signing up on our website and creating a business profile. Once approved, they can start posting deals immediately.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END FAQ SECTION -->
 
   <!--CTA-->
   <section id="cta" class="py-5 bg-dark text-white-50">
@@ -422,66 +447,70 @@
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 
 <script>
-
-  // Function to toggle side navigation
-  function toggleSideNav() {
-    var sideNav = document.getElementById("sideNav");
-    sideNav.classList.toggle("show");
-  }
-
-  // Event listener for navbar toggler button
-document.querySelector(".navbar-toggler").addEventListener("click", toggleSideNav);
-
-
-function openNav() {
-  var sideNav = document.getElementById("sideNav");
-  sideNav.classList.add("show");
-}
-
-function closeNav(event, sectionId) {
-  event.preventDefault(); // Prevent the default anchor behavior
-  var sideNav = document.getElementById("sideNav");
-  sideNav.classList.remove("show");
-
-  // Scroll to #faq
-  var pageSection = document.getElementById(sectionId);
-  if (pageSection) {
-    pageSection.scrollIntoView({ behavior: "smooth" });
-  }
-}
-
-// Get the navbar element
-const navbar = document.getElementById('navbar');
-
-// Add scroll event listener
-window.addEventListener('scroll', function() {
-    // Check if the page has been scrolled down
-    if (window.scrollY > 0) {
-        // Add a class to the navbar
-        navbar.classList.add('scrolled');
-    } else {
-        // Remove the class from the navbar
-        navbar.classList.remove('scrolled');
+  $(document).ready(function() {
+    // Function to toggle side navigation
+    function toggleSideNav() {
+        $("#sideNav").toggleClass("show");
     }
-});
 
-$(document).ready(function() {
-  var $rotatingText = $('.rotating-text');
-  var $spans = $rotatingText.find('span');
-  var index = 0;
-  var total = $spans.length;
+    // Event listener for navbar toggler button
+    $(".navbar-toggler").on("click", toggleSideNav);
 
-  function rotateText() {
-    index = (index + 1) % total;
-    var offset = -index * 4; // 4rem is the height of each span
-    $rotatingText.css('transform', 'translateY(' + offset + 'rem)');
-  }
+    // Function to close the side navigation
+    function closeNav(event, sectionId) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        $("#sideNav").removeClass("show");
 
-  // Rotate text every 2 seconds
-  setInterval(rotateText, 2000); // Adjust the interval as needed
-});
+        // Scroll to the specified section
+        if (sectionId) {
+            var pageSection = $("#" + sectionId);
+            if (pageSection.length) {
+                $("html, body").animate({
+                    scrollTop: pageSection.offset().top
+                }, 100); // Adjust scrolling speed here
+            }
+        }
+    }
 
+    $(".closebtn, .nav-link").on("click", function(event) {
+      const sectionId = $(this).attr('href').substring(1); // Get the section ID from href
+      closeNav(event, sectionId);
+    });    
 
+    // Add scroll event listener for the navbar
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 0) {
+            $("#navbar").addClass("scrolled");
+        } else {
+            $("#navbar").removeClass("scrolled");
+        }
+    });
+
+    const texts = [
+      "Discover the joy of savings with BargainParrot, your one-stop shop for the best local deals.",
+      "Unlock new opportunities, attract more customers and boost your sales by showcasing your best deals."
+    ];
+
+    const descriptionElement = $("#description");
+    let typingIndex = 0;
+    let textIndex = 0;
+
+    function type() {
+      let currentText = texts[textIndex];
+      descriptionElement.text(currentText.substring(0, typingIndex));
+      typingIndex++;
+
+      if (typingIndex <= currentText.length) {
+        setTimeout(type, 50); // Adjust typing speed here (lower value = faster typing)
+      } else {
+        typingIndex = 0;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, 2000); // Wait for 2 seconds before starting to type the next text
+      }
+    }
+
+    type();
+  });
 </script>
 
 </body>
