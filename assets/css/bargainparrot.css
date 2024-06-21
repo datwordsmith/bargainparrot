@@ -1,7 +1,8 @@
 body {
-
     margin: 0;
     padding: 0;
+    background: url('../img/curved_lines.svg') no-repeat center center fixed;
+    background-size: cover;    
 }
 
 .navbar {
@@ -54,7 +55,7 @@ body {
     padding-top: 60px;
     z-index: 1050;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .offcanvas-nav.show {
@@ -77,18 +78,17 @@ body {
     color: #ffffff;
 }
 
-
 #home {
     margin-top: 0;
     padding-top: 4.5rem; /* Equal to the height of the navbar */
-    background: url('../img/curved_lines.svg') no-repeat center center;
-    background-size: cover;
+    background: transparent !important;
 }
 
 .black-friday {
     font-size: 1.5em; 
     background-color: #FC4100;
     color: white;
+    border-radius: 10px 0 10px 0;
 }
 
 .rotating-text-container {
@@ -98,19 +98,28 @@ body {
     height: 4rem; /* Adjust as needed */
     overflow: hidden;
     position: relative;
-  }
+}
   
-  .rotating-text {
+.rotating-text {
     display: inline-block;
     position: absolute;
     top: 0;
-  }
+}
   
-  .rotating-text span {
+.rotating-text span {
     display: block;
     height: 4rem; /* Adjust as needed */
     line-height: 4rem; /* Adjust as needed */
-  }
+}
+
+#description {
+    height: 150px; /* Set a fixed height */
+    display: flex;
+    align-items: left;
+    overflow: hidden; /* Hide any overflow text */
+    font-size: 1.6em;
+}
+  
 
 .btn {
     border-radius: 10px 10px 10px 0;
@@ -141,14 +150,14 @@ body {
 }
 
 .btn-outline-accent {
-    border: 1px solid #00215E;
-    color: #00215E;
+    border: 1px solid #FFC55A;
+    color: #FFC55A;
 }
 
 .btn-outline-accent:hover {
-    background-color: #00215E;
-    border: 1px solid #00215E;
-    color: white;
+    background-color: #FFC55A;
+    border: 1px solid #FFC55A;
+    color: black;
 }
 
 
@@ -201,6 +210,11 @@ body {
   }
 
 
+
+  .about-us-image {
+    max-width: 70%; /* Adjust this value to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
 /* Features */
