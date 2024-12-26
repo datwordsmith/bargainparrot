@@ -23,7 +23,7 @@ body {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(252, 65, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-#navbarNav .nav-item a {
+#navbarNav .nav-item .nav-link {
     background-color: #FC4100;
     border-radius: 10px 10px 10px 0;
     color: white;
@@ -41,6 +41,28 @@ body {
 
 .navbar-nav .nav-item:last-child {
     margin-right: 0;
+}
+
+#navbarNav .nav-item .dropdown-toggle {
+    background-color: #FC4100 !important;
+    border-radius: 10px 10px 10px 0;
+    color: white;
+}
+
+#navbarNav .nav-item .dropdown-menu {
+    border-radius: 0 10px 10px 10px;
+    border: 1px solid #FFF0D3;
+}
+
+#navbarNav .nav-item .dropdown-menu a {
+    background-color: none;
+    border-radius: 0;
+}
+
+#navbarNav .nav-item .dropdown-menu a:hover {
+    background-color: transparent;
+    color: #ffc55a;
+    border-radius: 0;
 }
 
 .offcanvas-nav {
@@ -216,6 +238,11 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
+#about {
+    .about-content {
+        text-align: justify;
+    }
+}
 
 /* Features */
 #shoppers {
